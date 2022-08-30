@@ -19,6 +19,7 @@ public class User {
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private int id; // 아파트 아이디
 
+
     @Column(nullable = false, length = 30)
     private String apartname;
 
@@ -28,8 +29,11 @@ public class User {
     @Column(nullable = false, length = 30)
     private String unit; // 호
 
-//    @Column(nullable = false, length = 15)
-//    private String phonenumber;
+    @Column(nullable = false, length = 15)
+    private String phonenumber;
+
+    @Column(nullable = false, length = 30)
+    private String nearest_station;
 
     @Enumerated(EnumType.STRING)
     private Role role;

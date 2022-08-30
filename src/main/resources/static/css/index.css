@@ -31,6 +31,7 @@ ul li{
 }
 ul #home:hover, ul .menu:hover{
     color: black;
+    cursor: pointer;
 }
 
 #home{
@@ -45,10 +46,15 @@ ul #home:hover, ul .menu:hover{
 }
 
 #join{
+    padding-top: 20px;
     width: 60%;
     background-color: aliceblue;
     margin:auto;
     border: 1px solid gainsboro;
+}
+#join h1{
+    text-align: center;
+    padding-top: 100px;
 }
 #join h2{
     text-align: center;
@@ -72,7 +78,9 @@ ul #home:hover, ul .menu:hover{
 #btn-save{
     font-size: larger;
     margin:auto;
-    background-color: rgb(255, 0, 0);
+    width:20%;
+    height: 40px;
+    background-color: #04AA6D;
     color:white;
 }
 
@@ -83,13 +91,27 @@ ul #home:hover, ul .menu:hover{
 footer{
     margin:0;
     width:100%;
-    height: 20%;    
     background-color: gainsboro;
-    bottom:0px;
     text-align: center;
-    
-}
-footer div{
-    padding:10px;
-}
 
+}
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:20%;
+    height: 40px;
+  }
+
+  ol{
+    list-style:none;
+    overflow: auto;
+    height: 864px;
+  }
+  .li{
+    border: 1px solid black;
+    width:1152px;
+  }

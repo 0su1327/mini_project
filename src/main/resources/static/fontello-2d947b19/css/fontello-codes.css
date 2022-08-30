@@ -2,6 +2,8 @@
 .icon-key:before { content: '\e800'; } /* '' */
 .icon-user:before { content: '\e801'; } /* '' */
 .icon-home:before { content: '\e802'; } /* '' */
+.icon-phone:before { content: '\e803'; } /* '' */
+.icon-phone-circled:before { content: '\e804'; } /* '' */
 .icon-commerical-building:before { content: '\e811'; } /* '' */
 .icon-building-filled:before { content: '\f1ad'; } /* '' */
 .icon-user-plus:before { content: '\f234'; } /* '' */

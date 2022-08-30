@@ -11,11 +11,18 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class AdminService {
 
+
     @Autowired
     private AdminRepository adminRepository;
 
-    @Transactional(readOnly = true)
+    @Transactional
+    public void join(Admin admin) {
+        adminRepository.save(admin);
+    }
+
+    @Transactional
     public Admin login(Admin admin) {
         return adminRepository.findByFirestationnameAndFirestationpassword(admin.getFirestationname(), admin.getFirestationpassword());
     }
+
 }

@@ -18,11 +18,19 @@
 	</properties>
 	<dependencies>
 		<!-- 시큐리티 태그 라이브러리 -->
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-taglibs</artifactId>
 			<version>5.2.2.RELEASE</version>
 		</dependency>
+=======
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.security</groupId>-->
+<!--			<artifactId>spring-security-taglibs</artifactId>-->
+<!--			<version>5.2.2.RELEASE</version>-->
+<!--		</dependency>-->
+>>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
 
 		<!-- JSP 템플릿 엔진 -->
 		<dependency>
@@ -40,10 +48,17 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+<<<<<<< HEAD
 				<dependency>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-security</artifactId>
 				</dependency>
+=======
+<!--				<dependency>-->
+<!--					<groupId>org.springframework.boot</groupId>-->
+<!--					<artifactId>spring-boot-starter-security</artifactId>-->
+<!--				</dependency>-->
+>>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -72,11 +87,24 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 				<dependency>
 					<groupId>org.springframework.security</groupId>
 					<artifactId>spring-security-test</artifactId>
 					<scope>test</scope>
 				</dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>9.0.65</version>
+        </dependency>
+        =======
+<!--				<dependency>-->
+<!--					<groupId>org.springframework.security</groupId>-->
+<!--					<artifactId>spring-security-test</artifactId>-->
+<!--					<scope>test</scope>-->
+<!--				</dependency>-->
+>>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
 	</dependencies>
 
 	<build>

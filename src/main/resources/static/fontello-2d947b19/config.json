@@ -53,6 +53,18 @@
       "css": "commerical-building",
       "code": 59409,
       "src": "maki"
+    },
+    {
+      "uid": "c91098f07ff0df45b3f8666b72b75801",
+      "css": "phone",
+      "code": 59395,
+      "src": "elusive"
+    },
+    {
+      "uid": "23a1de57eb7b0c8281656a3ddadf3ee3",
+      "css": "phone-circled",
+      "code": 59396,
+      "src": "elusive"
     }
   ]
 }

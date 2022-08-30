@@ -74,6 +74,6 @@ navigator.geolocation.getCurrentPosition(function (pos) {
   }
   console.log(min_firestation);
   document.getElementById("info").innerText =
-    min_firestation + "소방서로 등록되었습니다.";
+    "정보가 공유 될 인접 소방서는 "+min_firestation + "입니다.";
   $("input[name=station]").attr("value", min_firestation);
 });

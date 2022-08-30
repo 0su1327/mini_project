@@ -10,8 +10,9 @@ server:
 spring:
   mvc:
     view:
-      prefix: /WEB-INF/views/
-      suffix: .html
+      prefix:
+      suffix:
+
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -22,7 +23,8 @@ spring:
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
+
       # none, create = 실행마다 테이블을 새로만들겠다, update = 기존 테이블에 추가
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
@@ -36,4 +38,3 @@ spring:
   jackson:
     serialization:
       fail-on-empty-beans: false
-

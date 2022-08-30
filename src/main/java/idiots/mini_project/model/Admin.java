@@ -17,7 +17,7 @@ public class Admin {
 
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
-    private int firestationid;
+    private int id;
 
     @Enumerated(EnumType.STRING)
     private Role role;
@@ -29,7 +29,7 @@ public class Admin {
     private String firestationpassword;
 
     @ManyToOne
-    @JoinColumn(name="apartname")
+    @JoinColumn(name="nearest_station")
     private User user;
 
 }

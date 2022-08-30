@@ -1,11 +1,7 @@
-var latitude, longitude;
-
 navigator.geolocation.getCurrentPosition(function (pos) {
-  console.log(pos);
+  let min_firestation;
   var latitude = pos.coords.latitude;
   var longitude = pos.coords.longitude;
-  alert("현재 위치는 : " + latitude + ", " + longitude + " 입니다.");
-
   var positions = [
     //각 지점의 경도, 위도를 배열 형식으로 저장해 놓기 위한 positions 객체 생성
     {
@@ -39,11 +35,10 @@ navigator.geolocation.getCurrentPosition(function (pos) {
       lon: 126.9525,
     },
   ];
-
   let arr = []; //distance를 저장해두는 배열집합
   let distance; //haversine 공식으로 나온 거리
   let min; //최소거리
-  let min_firestation; //최소 거리에 있는 소방서
+  //최소 거리에 있는 소방서
   let radius = 6371; //지구의 반지름
   let toRadian = Math.PI / 180; //라디안으로 바꾸기 위한 선언
 
@@ -66,24 +61,19 @@ navigator.geolocation.getCurrentPosition(function (pos) {
     distance = 2 * radius * Math.asin(squareRoot);
 
     arr[i] = distance;
-
-    console.log(arr[i]);
   }
-  alert("여기까지 왔누");
 
   min = arr[1];
   for (let i = 2; i < positions.length; i++) {
     if (min > arr[i]) {
       min = arr[i];
       min_firestation = positions[i].title;
-      console.log(min_firestation);
     } else {
       continue;
     }
   }
-  alert("여기까지 왔어요");
-  alert(min_firestation);
-
-  document.getElementById("min_value").innerText = min;
-  document.getElementById("nearest_station").innerText = min_firestation;
+  console.log(min_firestation);
+  document.getElementById("info").innerText =
+    min_firestation + "소방서로 등록되었습니다.";
+  $("input[name=station]").attr("value", min_firestation);
 });

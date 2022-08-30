@@ -1,47 +1,12 @@
-<article id="join">
-  <h2>서비스 등록하기</h2>
-  <form>
-    <div>
-      <i class="icon-building-filled"></i>
-      <b>아파트 이름</b><br />
-
-      <input
-        type="text"
-        id="apartname"
-        placeholder=" oo아파트"
-        style="width: 280px"
-      />
-    </div>
-
-    <div>
-      <i class="icon-home"></i>
-      <b>주소(동/호)</b><br />
-
-      <input
-        type="number"
-        id="building"
-        placeholder="(숫자)동"
-        style="width: 130px"
-      />
-      /
-      <input
-        type="number"
-        id="unit"
-        style="width: 130px"
-        placeholder="(숫자)호"
-      />
-    </div>
-
-    <div>
-      <i class="icon-handshake-o"></i>
-      <b>정보 공유 소방서 등록</b><br />
-
-      <input type="radio" id="A" /> A 소방서 <input type="radio" id=/> B 소방서
-      <input type="radio" /> C 소방서
-      <button onclick="deselect()" id="deselect">선택 해제</button>
-    </div>
-    <div>
-      <input id="btn-save" type="submit" value="Register" />
-    </div>
-  </form>
-</article>
+<h2>로그인</h2>
+        <form>
+            <div>
+              <i class="icon-user"></i>
+              <input  type="text" id="id" placeholder="아이디"/>    
+            </div>
+            <div>
+              <i class="icon-key"></i>
+              <input type="password" id="password" placeholder="비밀번호"/>
+            </div>
+        </form>
+        <div><a href="#"><i class="icon-user-plus"></i>회원가입</a></div>

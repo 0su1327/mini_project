@@ -9,10 +9,11 @@
       >
     </li>
     <li>
-      <a href="login.html" class="menu"><b>관리자 로그인</b></a>
+      <a href="Login.html" class="menu"><b>관리자 로그인</b></a>
     </li>
     <li>
-      <a href="Register.html" class="menu"><b>등록하기</b></a>
+      <a class="menu" href="Regist.html" ><b>등록하기</b></a>
     </li>
   </ul>
 </nav>
+
